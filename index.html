@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Netprime</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#">Net<b>Prime</b></a>
+      <button id="back-button" class="back-btn" style="display: none;">← Back</button>
+      <div class="search-box">
+        <form role="search" id="form">
+          <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+        </form>
+      </div>
+    </div>
+    
+    <div class="categories-nav">
+      <button class="category-btn active" data-category="popular">Popular</button>
+      <button class="category-btn" data-category="28">Action</button>
+      <button class="category-btn" data-category="35">Comedy</button>
+      <button class="category-btn" data-category="18">Drama</button>
+      <button class="category-btn" data-category="27">Horror</button>
+      <button class="category-btn" data-category="10749">Romance</button>
+      <button class="category-btn" data-category="878">Sci-Fi</button>
+      <button class="category-btn" data-category="53">Thriller</button>
+      <button id="suggestions-btn" class="category-btn">Suggestions</button>
+    </div>
+    
+    <div style="padding: 0 16px; max-width: 1200px; margin: 0 auto;">
+      
+      <!-- Movie Suggestions Section -->
+      <div id="suggestions-section" style="display: none;">
+        <div class="suggestions-header">
+          <h2>Movie Suggestions & Reviews</h2>
+          <button id="add-suggestion-btn" class="add-suggestion-btn">+ Add Movie Suggestion</button>
+        </div>
+        
+        <!-- Suggestion Form Modal -->
+        <div id="suggestion-modal" class="suggestion-modal" style="display: none;">
+          <div class="suggestion-modal-content">
+            <span class="close-suggestion">&times;</span>
+            <h3>Suggest a Movie</h3>
+            <form id="suggestion-form">
+              <input type="text" id="movie-title" placeholder="Movie Title" required>
+              <input type="text" id="movie-year" placeholder="Release Year" required>
+              <input type="text" id="movie-genre" placeholder="Genre" required>
+              <textarea id="movie-description" placeholder="Brief Description" rows="3" required></textarea>
+              <textarea id="your-review" placeholder="Your Review" rows="4" required></textarea>
+              <input type="text" id="reviewer-name" placeholder="Your Name" required>
+              <div class="rating-input">
+                <label>Rating: </label>
+                <select id="movie-rating" required>
+                  <option value="">Select Rating</option>
+                  <option value="1">1/10</option>
+                  <option value="2">2/10</option>
+                  <option value="3">3/10</option>
+                  <option value="4">4/10</option>
+                  <option value="5">5/10</option>
+                  <option value="6">6/10</option>
+                  <option value="7">7/10</option>
+                  <option value="8">8/10</option>
+                  <option value="9">9/10</option>
+                  <option value="10">10/10</option>
+                </select>
+              </div>
+              <button type="submit" class="submit-suggestion">Submit Suggestion</button>
+            </form>
+          </div>
+        </div>
+        
+        <!-- Suggestions Display -->
+        <div id="suggestions-container">
+          <!-- Suggestions will be displayed here -->
+        </div>
+      </div>
+      
+   <section id="section">
+<!--     <div class="row"> 
+       <div class= "column">
+         <div class="card">
+           <center><img src ="Fantastic 4.jpeg" class="thumbnail"></center>
+           <h3>Movie Title</h3>
+
+         </div>
+       </div>
+      </div> -->
+   </section>
+    
+  </body> 
+  <script src="script.js"></script>
+</html>
